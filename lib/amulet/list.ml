@@ -127,7 +127,7 @@ let iiter cont =
   let rec loop i = function
     | [] -> ()
     | Cons (x, xs) ->
-        cont x
+        cont i x
         loop (i + 1) xs
   loop 0
 
